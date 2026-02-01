@@ -1,0 +1,19 @@
+
+## Como Executar Localmente
+
+1. Clone o repositório
+2. Abra o arquivo `public/index.html` em seu navegador
+
+## Deploy no Vercel
+
+1. Conecte seu repositório GitHub ao Vercel
+2. O Vercel detectará automaticamente as configurações
+3. O site será publicado automaticamente
+
+## Compatibilidade
+
+Este painel é compatível com o site principal da Doce Lagom e compartilha os mesmos dados (localStorage).
+
+## Suporte
+
+Para problemas ou dúvidas, entre em contato com o administrador do sistema.
