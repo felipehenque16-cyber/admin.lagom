@@ -339,7 +339,7 @@ const AdminState = {
         orderList.innerHTML = '';
         
         if (orders.length === 0) {
-            orderList.innerHTML = '<div style="text-align: center; padding: 20px; color: var(--azul-acinzentado);">Nenhum pedido encontrado</div>';
+            orderList.appendChild(createEmptyState('fa-shopping-cart', 'Nenhum pedido encontrado'));
         } else {
             orders.forEach(order => {
                 const orderItem = document.createElement('div');
@@ -366,7 +366,7 @@ const AdminState = {
         bestSellersList.innerHTML = '';
         
         if (stats.bestSellers.length === 0) {
-            bestSellersList.innerHTML = '<div style="text-align: center; padding: 20px; color: var(--azul-acinzentado);">Nenhuma venda registrada</div>';
+            bestSellersList.appendChild(createEmptyState('fa-star', 'Nenhuma venda registrada'));
         } else {
             stats.bestSellers.forEach(item => {
                 const sellerItem = document.createElement('div');
@@ -463,6 +463,17 @@ function showMessage(type, text) {
             message.remove();
         }
     }, 3000);
+}
+
+// Função para criar estado vazio
+function createEmptyState(icon, message) {
+    const emptyState = document.createElement('div');
+    emptyState.className = 'empty-state';
+    emptyState.innerHTML = `
+        <i class="fas ${icon}"></i>
+        <p>${message}</p>
+    `;
+    return emptyState;
 }
 
 // Inicialização
