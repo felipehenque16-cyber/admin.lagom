@@ -11,23 +11,33 @@
 <body>
     <!-- Tela de Login -->
     <div class="login-container" id="login-container">
-        <div class="admin-logo">
-            <img src="https://i.ibb.co/Zp2FXJPB/Chat-GPT-Image-18-de-jan-de-2026-16-00-28-removebg-preview.png" alt="Doce Lagom Logo">
-            <h1>Doce Lagom</h1>
-            <p>Painel Administrativo</p>
-        </div>
-        
-        <form class="login-form" id="admin-login-form">
-            <h2>Acesso Restrito</h2>
-            <input type="text" id="admin-username" placeholder="Usuário" required>
-            <input type="password" id="admin-password" placeholder="Senha" required>
-            <button type="submit" class="login-submit">Entrar no Painel</button>
-            <div class="login-error" id="admin-error"></div>
-            
-            <div class="back-to-login">
-                <a href="https://doce-lagom.vercel.app" target="_blank">← Voltar para o site</a>
+        <div class="login-wrapper">
+            <div class="admin-logo">
+                <img src="https://i.ibb.co/Zp2FXJPB/Chat-GPT-Image-18-de-jan-de-2026-16-00-28-removebg-preview.png" alt="Doce Lagom Logo">
+                <h1>Doce Lagom</h1>
+                <p>Painel Administrativo</p>
             </div>
-        </form>
+            
+            <form class="login-form" id="admin-login-form">
+                <h2>Acesso Restrito</h2>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="admin-username" placeholder="Usuário" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="admin-password" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="login-submit">Entrar no Painel</button>
+                <div class="login-error" id="admin-error"></div>
+                
+                <div class="back-to-login">
+                    <a href="https://doce-lagom.vercel.app" target="_blank">
+                        <i class="fas fa-arrow-left"></i> Voltar para o site
+                    </a>
+                </div>
+            </form>
+        </div>
     </div>
 
     <!-- Dashboard Administrativo -->
@@ -36,7 +46,9 @@
             <h2 class="dashboard-title">
                 <i class="fas fa-cog"></i> Painel Administrativo - Doce Lagom
             </h2>
-            <button class="admin-logout" id="admin-logout">Sair do Painel</button>
+            <button class="admin-logout" id="admin-logout">
+                <i class="fas fa-sign-out-alt"></i> Sair do Painel
+            </button>
         </div>
         
         <div class="dashboard-content">
@@ -93,7 +105,7 @@
             <div class="dashboard-card quick-actions">
                 <h3><i class="fas fa-bolt"></i> Ações Rápidas</h3>
                 <div class="actions-grid">
-                     <button class="admin-btn btn-restock" id="btn-restock-all">
+                    <button class="admin-btn btn-restock" id="btn-restock-all">
                         <i class="fas fa-redo"></i> Repor Todo o Estoque
                     </button>
                     <button class="admin-btn btn-edit" id="btn-export-data">
