@@ -41,8 +41,4 @@ Painel administrativo para gerenciamento de pedidos e estoque da Doce Lagom.
 - Font Awesome para ícones
 - Google Fonts (Montserrat, Playfair Display)
 
-## Como Executar Localmente
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/doce-lagom-admin.git
+## Estrutura do Projeto
